@@ -1,0 +1,14 @@
+{application, pewpew,
+ [
+  {description, "pewpew"},
+  {vsn, "0.0.1"},
+  {modules, [pewpew, pewpew_sup, pewpew_worker, pewpew_ws]},
+  {registered, [pewpew]},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  sasl
+                 ]},
+  {mod, { pewpew, []}},
+  {env, []}
+ ]}.
